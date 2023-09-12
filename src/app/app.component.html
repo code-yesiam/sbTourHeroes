@@ -1,6 +1,7 @@
 <h1>{{title}}</h1>
-<h2>{{title}}</h2>
-<h3>{{title}}</h3>
-<input type="text" placeholder="some text here...">
-<button type="submit">Click me</button>
-<app-heroes></app-heroes>
+<nav>
+  <a routerLink="/dashboard">Show DashBoard</a>
+  <a routerLink="/heroes">Show Heroes</a>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
