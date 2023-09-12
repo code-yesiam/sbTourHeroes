@@ -5,5 +5,19 @@
         <span class="badge">{{hero.id}}</span>
         <span class="name">{{hero.name}}</span>
     </a>
+    <button
+    type="button"
+    class="delete"
+    title="delete hero"
+    (click)="delete(hero)">&#x2716;</button>
   </li>
 </ul>
+<div>
+  <label for="new-hero">Hero Name:</label>
+  <input id="new-hero" #heroName/>
+  <button
+  type="button"
+  class="add-button"
+  (click)="add(heroName.value)">Add hero</button>
+</div>
+
